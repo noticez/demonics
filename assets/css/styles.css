@@ -1,0 +1,321 @@
+body {
+   background: url('../img/background.jpg');
+   background-color: #281d32;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   margin: 0;
+}
+@font-face {
+   font-family: Comfortaa;
+   src: url(../fonts/Comfortaa-Regular.ttf);
+   font-style: normal;
+   font-weight: 400;
+}
+::-webkit-scrollbar {
+   width: 0;
+}
+.top {
+   display: flex;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+}
+.ava {
+   transform: translate(0,-1000%);
+   border: 2px solid gray;
+   border-radius: 35%;
+   margin-right: 50px;
+   animation: ava 1s 1s forwards;
+}
+@keyframes ava {
+   0% {
+      opacity: 0;
+      transform: translate(0,10%);
+   }
+   100% {
+      transform: translate(0,0);
+      opacity: 100;
+   }
+}
+.text1 {
+   color: #fff;
+   font-family: Comfortaa;
+   font-size: 50px;
+}
+.ttt {
+   animation: text1 .8s .5s forwards;
+   transform: translate(0,-1000%);
+}
+@keyframes text1 {
+   0% {
+      opacity: 0;
+      transform: translate(-5%,0%);
+   }
+   100% {
+      transform: translate(0,0);
+      opacity: 100;
+   }
+}
+.button {
+   color: #5c387c;
+   display: inline-block;
+   background-color: #fff;
+   margin-top: 30px;
+   border-radius: 10px;
+   padding: 17px 20px;
+   font-family: Comfortaa;
+   position: relative;
+   text-decoration: none;
+   font-size: 27px;
+   transition: .3s;
+   transition-property: background-color;
+}
+.button:hover {
+   background-color: #d3d3d3;
+   transition: .3s;
+   transition-property: background-color;
+}
+.button2 {
+   color: lightgray;
+   display: inline-block;
+   background-color: rgba(255, 255, 255, 0.05);
+   margin-top: 30px;
+   border-radius: 10px;
+   padding: 17px 20px;
+   font-family: Comfortaa;
+   position: relative;
+   text-decoration: none;
+   font-size: 27px;
+   transition: .3s;
+   transition-property: background-color;
+}
+.button2:hover {
+   background-color: rgba(255, 255, 255, 0.15);
+   transition: .3s;
+   transition-property: background-color;
+}
+.bottom {
+   background-color: #0f0f0f;
+   font-family: Comfortaa;
+   padding-top: 20px;
+   padding-bottom: 60px;
+   text-align: center;
+}
+.text2 {
+   color: gray;
+   font-size: 40px;
+}
+.text3 {
+   color: gray;
+   font-size: 25px;
+}
+.steam {
+   margin-right: 100px;
+   text-decoration: none;
+   color: #d3d3d3;
+   font-size: 40px;
+   transition: .2s;
+   transition-property: color;
+}
+.steam:hover {
+   color: #5c387c;
+   transition: .2s;
+   transition-property: color;
+}
+.telegram {
+   margin-right: 100px;
+   text-decoration: none;
+   color: #d3d3d3;
+   font-size: 45px;
+   transition: .2s;
+   transition-property: color;
+}
+.telegram:hover {
+   color: #5c387c;
+   transition: .2s;
+   transition-property: color;
+}
+.discord {
+   margin-right: 100px;
+   text-decoration: none;
+   color: #d3d3d3;
+   font-size: 37px;
+   transition: .2s;
+   transition-property: color;
+}
+.discord:hover {
+   color: #5c387c;
+   transition: .2s;
+   transition-property: color;
+}
+.youtube {
+   text-decoration: none;
+   color: #d3d3d3;
+   font-size: 37px;
+   transition: .2s;
+   transition-property: color;
+
+}
+.youtube:hover {
+   color: #5c387c;
+   transition: .2s;
+   transition-property: color;
+}
+.line {
+   background-color: #d3d3d3;
+   width: 150px;
+   height: 3px;
+   margin-bottom: 50px;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 50px;
+}
+.line2 {
+   background-color: #d3d3d3;
+   width: 150px;
+   height: 3px;
+   margin-top: 50px;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 50px;
+}
+@media screen and (max-width:1280px) {
+   body {
+      background:  #281d32;
+   }
+.ava {
+   width: 225px;
+   height: 225px;
+}
+.text1 {
+   font-size: 40px;
+}
+.button {
+   font-size: 20px;
+}
+.button2 {
+   font-size: 20px;
+}
+.text2 {
+   font-size: 35px;
+}
+.text3 {
+   font-size: 20px;
+}
+}@media screen and (max-width:980px) {
+   .top {
+   display: block;
+   height: 100vh;
+}
+.ava {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 30px;
+   border-radius: 50%;
+   width: 200px;
+   height: 200px;
+}
+.text1 {
+   text-align: center;
+}
+.button {
+   text-align: center;
+}
+.button2 {
+   text-align: center;
+}
+.steam {
+   font-size: 30px;
+}
+.telegram {
+   font-size: 35px;
+}
+.discord {
+   font-size: 27px;
+}
+.youtube {
+   font-size: 27px;
+}
+}@media screen and (max-width:800px) {
+   .top {
+   height: 60vh;
+}
+.bottom {
+   padding-top: 20px;
+   padding-bottom: 200px;
+}
+.ava {
+   width: 175px;
+   height: 175px;
+}
+.text1 {
+   font-size: 30px;
+}
+.steam {
+   margin-right: 50px;
+}
+.telegram {
+   margin-right: 50px;
+}
+.discord {
+   margin-right: 50px;
+}
+.text2 {
+   font-size: 25px;
+}
+.text3 {
+   font-size: 20px;
+}
+}@media screen and (max-width:560px) {
+   .ava {
+   width: 160px;
+   height: 160px;
+}
+.text1 {
+   font-size: 28px;
+}
+.button {
+   display: block;
+   margin-right: 15px;
+   margin-left: 15px;
+}
+.button2 {
+   display: block;
+   margin-right: 15px;
+   margin-left: 15px;
+}
+}@media screen and (max-width:400px) {
+   .ava {
+   width: 125px;
+   height: 125px;
+}
+.text1 {
+   font-size: 25px;
+}
+.button {
+   font-size: 15px;
+}
+.button2 {
+   font-size: 15px;
+}
+.text2 {
+   font-size: 20px;
+}
+.text3 {
+   font-size: 15px;
+}
+.steam {
+   font-size: 25px;
+}
+.telegram {
+   font-size: 30px;
+}
+.discord {
+   font-size: 22px;
+}
+.youtube {
+   font-size: 22px;
+}
+}

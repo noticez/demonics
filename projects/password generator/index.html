@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="text-center">Password Generator</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form>
+                    <div class="form-group">
+                        <label for="param-1">Длина строки (<span id="password-length">10</span>)</label>
+                        <input type="range" class="form-control" id="param-1" value="10" max="50">
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="param-2" checked> Цифры
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="param-3" checked> Строчные буквы
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="param-4"> Прописные буквы
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="param-5"> Спецсимволы
+                        </label>
+                    </div>
+
+                    <a type="button" href="#" class="btn btn-default" id="generator">Generate</a>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="out">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/generator.js"></script>
+</body>
+
+</html>
