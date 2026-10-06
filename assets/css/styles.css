@@ -8,7 +8,7 @@ body {
 }
 @font-face {
    font-family: Comfortaa;
-   src: url(../fonts/comfortaa-regular.ttf);
+   src: url(../fonts/comfortaa-regular.ttf) format('truetype');
    font-style: normal;
    font-weight: 400;
 }
