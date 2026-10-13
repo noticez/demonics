@@ -1,12 +1,4 @@
-$(document).ready(function() {
-  $("a.button").click(function(){
-    $("html, body").animate({
-      scrollTop: $($(this).attr("href")).offset().top + "px"
-      }, {
-      duration: 2000,
-      easing: "swing"
-      });
-    return false;
+document.querySelector('.hero-button-links').addEventListener('click', (e) => {
+    e.preventDefault();
+    document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
 });
-});
-console.log('Demonics')
